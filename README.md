@@ -1,89 +1,108 @@
-# 🎮 Arkanoid Clone
+# 🎮 Arkanoid Game Clone
 
-A 2D game inspired by the classic **Arkanoid**, developed with **Unity and C#** as a personal project to practice game development and gameplay programming.
+A 2D game inspired by the classic Arkanoid, developed with Unity and C# as a personal project to practice game development fundamentals and gameplay programming.
 
-The project focuses on recreating the core mechanics of a brick-breaker game while exploring fundamental concepts of game development using Unity.
+The project recreates the core brick-breaker mechanics while implementing player movement, ball physics, collision handling, lives, multiple levels, sound effects, and game-over logic.
 
-##  About the Game
+🕹️ About the Game
+The player controls a paddle horizontally and must keep the ball in play while destroying all the bricks in the level.
+When the ball reaches the dead zone, the player loses a life and the level is reset. After losing all available lives, the game transitions to a Game Over scene.
+Destroying all the bricks advances the player to the next level.
 
-The objective is simple: control the paddle, keep the ball in play, and destroy the bricks to progress through the game.
+✨ Features
+Paddle movement using keyboard input
+Ball physics using Rigidbody2D
+Collision detection with paddle, bricks, walls, and dead zone
+Destructible bricks
+Life system
+Level progression
+Game Over scene
+Player and ball reset system
+Sound effects for different collision types
+Scene management
 
-This project was created as part of my learning process in game development and allowed me to work with Unity's game loop, physics system, collision detection, player input, and C# scripting.
+🛠️ Built With
+Unity
+C#
+Unity 2D Physics
+Unity Scene Management
+Unity Audio System
 
-##  Built With
+🎮 Controls
+Left / Right Arrow Keys or A / D — Move the paddle
 
-* **Unity** — Game Engine
-* **C#** — Gameplay programming
-* **Unity 2D Physics** — Movement and collision handling
+🧠 Gameplay Systems
 
-##  Concepts Practiced
+The project is divided into several gameplay components:
 
-During the development of this project, I worked with concepts such as:
+Player.cs — Handles paddle movement and reset behavior.
+Ball.cs — Controls ball initialization, physics, collision sounds, and reset behavior.
+Brick.cs — Handles brick destruction and level-completion checks.
+GameManager.cs — Manages player lives, level resets, and level progression.
+GameOverScene.cs — Handles restarting the game after Game Over.
 
-* Player input and paddle movement
-* 2D physics
-* Collision detection
-* Game objects and components
-* C# scripts in Unity
-* Scene management
-* Basic gameplay logic
-* Game state management
+📚 What I Learned
 
-##  Controls
+This project helped me practice fundamental concepts of game development with Unity and C#, including:
 
-The player controls the paddle horizontally to prevent the ball from leaving the play area.
+Working with MonoBehaviour
+Player input
+2D physics and Rigidbody2D
+Collision detection
+Game object interaction
+Scene management
+Basic game-state logic
+Audio feedback
+Organizing gameplay logic into separate scripts
 
-> Controls may vary depending on the configured input system.
+It was one of my first complete projects using Unity and helped me understand how different gameplay systems interact inside a game.
 
-##  Running the Project
+🚀 Running the Game
 
-To open the project locally:
+You can play the game directly without opening the Unity project.
 
-1. Clone this repository.
-2. Open **Unity Hub**.
-3. Select **Add project from disk**.
-4. Select the cloned project folder.
-5. Open the project using a compatible Unity version.
-6. Open the main game scene and press **Play**.
+Open the exe folder.
+Run Arkanoid.exe.
+The game will start immediately.
 
-##  Project Structure
+No additional installation or Unity setup is required to play the game.
 
-```
+
+
+Opening the project in Unity
+
+If you want to inspect or modify the source project:
+
+Clone this repository.
+Open Unity Hub.
+Select Add project from disk.
+Select the repository folder.
+Open the project using a compatible Unity version.
+
+📂 Project Structure
 Assets/
 ├── Scenes/
 ├── Scripts/
-├── Sounds/
+├── Sprites/
+├── Audio/
 └── ...
 
 Packages/
 ProjectSettings/
-```
 
-The `Assets` directory contains the main game resources and C# scripts, while `ProjectSettings` and `Packages` contain the Unity project configuration.
+🔮 Possible Future Improvements
 
-##  What I Learned
+Possible improvements for future versions could include:
+Power-ups
+Different brick types
+Score system
+Difficulty progression
+Improved UI
+More levels
+Visual effects
+High-score system
 
-This project was one of my first approaches to game development with Unity and C#.
+👨‍💻 Author
+Franco Fiuri
 
-Building a complete game helped me better understand how gameplay systems interact with each other, particularly player input, physics, collisions, game objects, scenes, and gameplay logic.
-
-It also gave me practical experience structuring a Unity project and translating game mechanics into code.
-
-##  Possible Future Improvements
-
-Some ideas that could be explored in future versions include:
-
-* Additional levels
-* Different types of bricks
-* Power-ups
-* Difficulty progression
-* Improved visual effects
-* Sound effects and music
-* High-score system
-* Improved UI and menus
-
-##  Author
-
-**Franco Fiuri**
-
-Personal project developed as part of my journey into software and game development.
+Personal project developed as part of my learning process in software and game development.
